@@ -31,3 +31,26 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Hide scrollbars for all elements */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbars for Firefox */
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.cursor-circle {
+  position: fixed; /* Make sure the cursor follows the mouse */
+  width: 60px; /* Adjust the size of the circle */
+  height: 60px;
+  border-radius: 50%; /* Make it a circle */
+  border: 1px solid #fff; /* Circle border color */
+  pointer-events: none; /* Make sure it doesn't interfere with clicks */
+  transform: translate(-50%, -50%); /* Center the circle around the cursor */
+  transition: ease-out 0.2s; /* Optional: Smooth transition for background color */
+  
+}
