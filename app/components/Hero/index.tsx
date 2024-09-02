@@ -1,7 +1,6 @@
 'use client'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { useState } from 'react';
 
 export default function Hero() {
 
@@ -169,9 +168,7 @@ export default function Hero() {
                 </motion.div>
             </div>
 
-            <Link
-                href='#projects'
-            >
+            <div>
                 <motion.div
                     initial={{ y:50, opacity:0}}
                     animate={{ y:0, opacity:1}}
@@ -197,7 +194,7 @@ export default function Hero() {
                         </div>
                     </motion.div>
                 </motion.div>
-            </Link>
+            </div>
             {/* NESTJS, PYTHON, TS, POSTGRES, AWS S3, SQL */}
         </div>
     )

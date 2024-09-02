@@ -1,14 +1,17 @@
 'use client'
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Projects() {
 
     return (
-        <div className="md:px-80 sm:px-10 w-full h-screen flex flex-col justify-center items-start py-24">
+        <div className="md:px-20 xl:px-80 w-full h-full flex flex-col justify-center items-start py-16">
             <h1 className="w-full font-bold text-left sm:text-[3rem] md:text-[4rem]">Projects</h1>
             
             {/* PROJECT AXIE INFINITY */}
-            <div 
+            <Link 
+                href="https://futureengineeringassociation.site/"
+                target="_blank"
                 className="group transition border-t flex justify-between items-center text-neutral-700 border-neutral-800 w-full h-24 
                 hover:bg-neutral-900 hover:cursor-pointer ease-in-out duration-150"
             >
@@ -32,10 +35,12 @@ export default function Projects() {
                         <div className="bg-purple-500">test</div>
                     </div> */}
                 </div>
-            </div>
+            </Link>
 
             {/* PROJECT VOGUE SCHOOL */}
-            <div 
+            <Link
+                href="https://vogueschool-dev-env.netlify.app/dashboard/teacher/course"
+                target="_blank"
                 className="group transition border-t flex justify-between items-center text-neutral-700 border-neutral-800 w-full h-24 
                 hover:bg-neutral-900 hover:cursor-pointer ease-in-out duration-150"
             >
@@ -59,10 +64,12 @@ export default function Projects() {
                         <div className="bg-purple-500">test</div>
                     </div> */}
                 </div>
-            </div>
+            </Link>
 
             {/* PROJECT WE RENT */}
-            <div 
+            <Link
+                href="https://we-rent-fe.vercel.app/register"
+                target="_blank"
                 className="group transition border-t flex justify-between items-center text-neutral-700 border-neutral-800 w-full h-24 
                 hover:bg-neutral-900 hover:cursor-pointer ease-in-out duration-150"
             >
@@ -86,11 +93,13 @@ export default function Projects() {
                         <div className="bg-purple-500">test</div>
                     </div> */}
                 </div>
-            </div>
+            </Link>
 
             {/* PROJECT SALEMATE */}
-            <div 
-                className="group transition border-t flex justify-between items-center text-neutral-700 border-neutral-800 w-full h-24 
+            <Link
+                href="https://sale-mate-fe.vercel.app/"
+                target="_blank"
+                className="group transition border-t border-b flex justify-between items-center text-neutral-700 border-neutral-800 w-full h-24 
                 hover:bg-neutral-900 hover:cursor-pointer ease-in-out duration-150"
             >
                 <h1 className="text-3xl transition-transform group-hover:translate-x-6 group-hover:text-white">Salemate</h1>
@@ -113,7 +122,7 @@ export default function Projects() {
                         <div className="bg-purple-500">test</div>
                     </div> */}
                 </div>
-            </div>
+            </Link>
 
         </div>
     )

@@ -1,16 +1,31 @@
-import { Hero, Projects, CustomCursor } from "../components";
+'use client'
+
+import { Hero, Projects, Contact } from "../components";
+import { motion} from 'framer-motion';
+import { useEffect } from "react";
 
 export default function Homepage() {
+    useEffect( () => {
+
+        (
+            async () => {
+                const LocomotiveScroll = (await import ('locomotive-scroll')).default;
+                const locomotiveScroll = new LocomotiveScroll();
+            }
+        )()
+    }, [])
+    
     return (
-        <div className="h-screen overflow-y-scroll scroll-snap-y scroll-smooth">
-            {/* <TopNavigation /> */}
-            <div id="hero" className="scroll-snap-start">
+        <div className="relative h-[210vh] overflow-y-scroll">
+            <div>
                 <Hero />
             </div>
-            <div id="projects" className="scroll-snap-start">
+            <div>
                 <Projects />
             </div>
-            {/* <CustomCursor /> */}
+            <div>
+                <Contact />
+            </div>
         </div>
     )
 };
