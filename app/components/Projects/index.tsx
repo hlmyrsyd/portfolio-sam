@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Projects() {
 
     return (
-        <div className="md:px-20 xl:px-80 w-full h-full flex flex-col justify-center items-start py-16">
+        <div className="md:px-20 xl:px-80 w-full h-full flex flex-col justify-center items-start py-16 text-neutral-200">
             <h1 className="w-full font-bold text-left sm:text-[3rem] md:text-[4rem]">Projects</h1>
             
             {/* PROJECT AXIE INFINITY */}

@@ -16,7 +16,7 @@ export default function Homepage() {
     }, [])
     
     return (
-        <div className="relative h-[210vh] overflow-y-scroll">
+        <div className="relative h-[195vh] overflow-y-scroll">
             <div>
                 <Hero />
             </div>

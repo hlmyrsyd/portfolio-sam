@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center gap-8">
             <div   
-                className="font-bold flex flex-col items-center">
+                className="font-bold flex flex-col items-center text-neutral-300">
                 <motion.h1 
                     initial={{ y:50, opacity:0}}
                     animate={{ y:0, opacity:1}}
@@ -173,6 +173,7 @@ export default function Hero() {
                     initial={{ y:50, opacity:0}}
                     animate={{ y:0, opacity:1}}
                     transition={{ duration:1, ease: 'easeInOut', delay:10}}
+                    className="text-neutral-300 hover:cursor-none"
                 >
                     {/* Down Arrow */}
                     <motion.div
@@ -189,7 +190,7 @@ export default function Hero() {
                         <h1>
                             Checkout my latest Project
                         </h1>
-                        <div className="text-white text-2xl">
+                        <div className=" text-2xl">
                             ↓
                         </div>
                     </motion.div>
